@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "@/globals.css";
 import Header from "@/components/Header";
- 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import { Roboto, Texturina } from "next/font/google";
+
+const roboto = Roboto({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const texturina = Texturina({
+  variable: "--font-texturina",
+  display: "swap",
+
   subsets: ["latin"],
 });
 
@@ -19,20 +20,14 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode;
-
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  w-full max-w-7xl mx-auto`}
-      >
-        <div className="flex justify-center mb-4">
-          <Header />
-           
-        </div>
+    <html lang="en" className={`${texturina.variable}`}>
+      <body className={`antialiased w-full max-w-7xl mx-auto bg-black m-2 px-5`}>
+        <Header />
 
         {children}
       </body>

@@ -16,7 +16,7 @@ const ShowTasks = async () => {
         {data.map((task) => (
           <div
             key={task.id}
-            className="border-b border-slate-900 p-4 flex items-center justify-between"
+            className="border-b border-slate-900 p-4 flex items-center justify-between hover:bg-amber-300"
           >
             <h2 className="text-slate-950 text-lg font-semibold">
               {task.title}
