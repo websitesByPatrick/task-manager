@@ -18,7 +18,7 @@ const ShowTasks = async () => {
             key={task.id}
             className="border-b border-slate-900 p-4 flex items-center justify-between hover:bg-amber-300"
           >
-            <h2 className="text-slate-950 text-lg font-semibold">
+            <h2 className="text-slate-950 text-lg font-semibold roboto">
               {task.title}
             </h2>
             <p className="text-slate-950">{task.content}</p>

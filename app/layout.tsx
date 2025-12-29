@@ -5,12 +5,13 @@ import { Roboto, Texturina } from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
 });
 
 const texturina = Texturina({
   variable: "--font-texturina",
   display: "swap",
-
   subsets: ["latin"],
 });
 
@@ -25,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${texturina.variable}`}>
+    <html lang="en" className={`${texturina.variable} ${roboto.variable}`}>
       <body className={`antialiased w-full max-w-7xl mx-auto bg-black m-2 px-5`}>
         <Header />
 
