@@ -5,10 +5,11 @@ const CancelButton = () => {
   const router = useRouter();
   return (
     <button
+      type="button"
       onClick={() => router.push("/")}
-      className="border shadow-2xl shadow-slate-900 border-black bg-slate-400 hover:bg-slate-900 text-slate-950 hover:text-slate-300 font-bold py-2 px-4 rounded"
+      className="bg-gray-800 text-gray-100 texturina text-sm px-2 pb-1 mt-1  rounded-full border md:text-lg md:px-3 md:pb-3 md:pt-2 hover:bg-gray-300 hover:text-gray-900 transition duration-300"
     >
-     Cancel
+      Cancel
     </button>
   );
 };

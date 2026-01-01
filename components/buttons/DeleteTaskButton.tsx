@@ -1,8 +1,7 @@
-'use client';
-import deleteRecord from "@/server-actions/deleteRecord";
+"use client";
+import deleteRecord from "@/serverActions/deleteTask";
 
 const DeleteTaskButton = ({ recID }: { recID: number }) => {
-  
   return (
     <div>
       <button

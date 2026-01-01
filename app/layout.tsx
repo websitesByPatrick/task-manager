@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@/globals.css";
-import Header from "@/components/Header";
+import Header from "@/components/dashboard/Header";
 import { Roboto, Texturina } from "next/font/google";
 
 const roboto = Roboto({
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${texturina.variable} ${roboto.variable}`}>
-      <body className={`antialiased w-full max-w-7xl mx-auto bg-black m-2 px-5`}>
+      <body className={`antialiased max-w-7xl mx-auto bg-slate-800 md:px-10`}>
         <Header />
 
         {children}

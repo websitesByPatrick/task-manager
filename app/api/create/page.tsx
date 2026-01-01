@@ -1,10 +1,9 @@
-import AddTask from "@/components/AddTask";
+import CreateTask from "@/components/crud/CreateTask";
 
 const page = () => {
-   
   return (
     <div>
-      <AddTask />
+      <CreateTask />
     </div>
   );
 };
